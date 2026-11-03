@@ -1,0 +1,9 @@
+1.phan tích
+-dung lượng của cake ít hơn cache
+-token là cuẩn ký tự chứa id của ng dùng 
+2.triển khai
+Token : Lưu trữ mã định danh phiên làm việc hoặc JWT để xác thực người dùng.
+Thời gian sống : Quy định thời gian tồn tại của Cookie (tính bằng giây, ví dụ 24 giờ) trước khi bị xóa tự động.
+Các cờ bảo mật : bảo vệ thông tin ng dùng
+3.kiểm thử
+Windows / Linux (Chrome, Edge, Firefox): Nhấn Ctrl + F5 hoặc Ctrl + Shift + R.
