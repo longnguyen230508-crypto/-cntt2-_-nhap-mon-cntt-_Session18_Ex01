@@ -1,0 +1,11 @@
+1.
+Bản chất dữ liệu API GPS thô: Khi hệ thống điều phối xe tải gọi API lấy tọa độ (ví dụ: GET /api/v1/vehicles/gps)
+, máy chủ trả về một chuỗi JSON thuần túy (raw text) dài, không có màu sắc phân biệt cú pháp (syntax highlighting) và bị dồn thành một dòng nếu không được định dạng.
+2.
+Dev Suite: JSON Formatter (định dạng dữ liệu API GPS) và ModHeader (sửa HTTP Header).
+Productivity: ColorPick Eyedropper (chấm mã màu) và OneTab (tối ưu tab/RAM).
+Security: uBlock Origin (chặn quảng cáo và script độc hại, tối ưu dung lượng).
+Bảo mật dữ liệu: Vào chrome://extensions chuyển Site access sang On click để chặn tiện ích tự ý đọc dữ liệu GPS nhạy cảm.
+3.
+Kiểm tra RAM: Nhấn Shift + Esc để mở Task Manager của trình duyệt.
+Xử lý: Phát hiện extension gây lag khi nạp biểu đồ Waterfall và chọn End process để tắt nhanh.
