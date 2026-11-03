@@ -1,0 +1,25 @@
+1. Tiến trình DNS và Lỗi gõ sai tên miền
+Luồng DNS Lookup: Trình duyệt 
+ OS Cache 
+ Resolver 
+ Root 
+ TLD (.vn) 
+ Authoritative Server 
+ Địa chỉ IP.
+Hậu quả gõ nhầm (grenlog.vn thiếu 'e'): Không có bản ghi trong hệ thống DNS 
+-> Báo lỗi NXDOMAIN.
+Kết luận: Khẳng định "máy chủ sập" của Nam là sai. Lỗi hoàn toàn ở phía Client do gõ sai URL.
+2. Phân biệt lỗi & Quy trình kiểm tra
+ lỗi:
+DNS Error (NXDOMAIN): Lỗi Client – Chưa tìm thấy IP, chưa chạm tới máy chủ.
+HTTP 500: Lỗi Server – Đã chạm tới máy chủ thành công nhưng máy chủ bị lỗi nội bộ.
+Kiem tra HTTP Status Code (F12 
+-> Tab Network):
+Nhận mã HTTP (200, 403, 404, 500...) 
+-> Đã kết nối tới máy chủ.
+Nhận lỗi mạng (ERR_...) 
+-> Chưa kết nối tới máy chủ.
+3. Nguyên nhân mã lỗi 404 Not Found
+Khi đúng tên miền nhưng bị lỗi 404 Not Found:
+Kết nối mạng tới máy chủ hoàn toàn bình thường.
+Máy chủ báo không tìm thấy đường dẫn (Path/URL) yêu cầu (do gõ sai đường dẫn con, thay đổi route hoặc lỗi cấu hình web server).
